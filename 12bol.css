@@ -6,48 +6,48 @@
 }
 
 .col-1 {
-  width: 8.33%;
+  width: calc( 100% / 12);
 }
 
 
 .col-2 {
-  width: 16.66%;
+  width: calc( 100% / 6);
 }
 
 .col-3 {
-  width: 25%;
+width: calc( 100% / 4);
 }
 
 .col-4 {
-  width: 33.33%;
+  width: calc( 100% / 3);
 }
 
 .col-5 {
-  width: 41.66%;
+width: calc( 100% / 2.4);
 }
 
 .col-6 {
-  width: 50%;
+  width: calc( 100% / 2);
 }
 
 .col-7 {
-  width: 58.33%;
+width: calc( 100% / 1.714285714285714);
 }
 
 .col-8 {
-  width: 66.66%;
+width: calc( 100% / 1.5);
 }
 
 .col-9 {
-  width: 75%;
+width: calc( 100% / 1.333333333333333);
 }
 
 .col-10 {
-  width: 83.33%;
+width: calc( 100% / 1.2);
 }
 
 .col-11 {
-  width: 91.66%;
+width: calc( 100% / 1.090909090909091);
 }
 
 .col-12 {
@@ -55,31 +55,32 @@
 }
 
 
-.colonnasx [class*="col-"],
-.colonnasx p  {
+/* MODIFICHE ULTIMA RIGA */
+[class*="col-"] > .row [class*="col-"],
+[class*="col-"] > .row p  {
   background-color: rgb(240,127,128);
   border:0;
 }
 
-.colonnasx .col-2 {
+[class*="col-"] > .row .col-2 {
   width: 14.66%;
   margin: 0 1%;
 }
 
-.colonnasx .col-8 {
+[class*="col-"] > .row .col-8 {
   width: 64.66%;
   margin: 0 1%;
 }
 
 
 
-.colonnadx [class*="col-"],
-.colonnadx p {
+[class*="col-"] > .row [class*="col-"],
+[class*="col-"] > .row p {
   background-color: rgb(240,127,128);
   border:0;
 }
 
-.colonnadx .col-6 {
+[class*="col-"] > .row .col-6 {
   width: 48%;
   margin: 0 1%;
 }
